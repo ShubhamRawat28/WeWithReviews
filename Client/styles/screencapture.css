@@ -5,7 +5,7 @@ html, body {
 }
 
 [data-tabs]>[role=tab] {
-	background: rgb(33, 150, 243);
+	background: #f45b03;
 	color: #fff !important;
 	cursor: pointer;
 }
