@@ -22,7 +22,7 @@ body {
 	text-align: center;
 	margin: 10px 0 10px 0;
 	padding-bottom: 20px;
-	border-bottom: 4px solid #2196f3;
+	border-bottom: 4px solid #f3a621;
 }
 
 .container .inner-wrapper {
@@ -30,7 +30,7 @@ body {
 }
 
 .container .inner-wrapper .status-text {
-	color: #2196f3;
+	color: #f3a621;
 	width: 100%;
 	text-align: center;
 	transition: opacity 0.6s;
@@ -64,7 +64,7 @@ body {
 
 .container .inner-wrapper .label label a.tip {
 	font-size: 14px;
-	color: #2196f3;
+	color: #f3a621;
 	display: inline-block;
 	width: 170px;
 }
