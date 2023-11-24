@@ -5,8 +5,8 @@
 	// pseudo-private members
 	// var $ = jQuery;
 	var isFirefox = typeof InstallTrigger !== 'undefined';
-	var appName = 'Copyfish'; //browser.i18n.getMessage('appShortName');
-	var appShortName = 'Copyfish';
+	var appName = 'WeWithReviews x CatFish'; 
+	var appShortName = 'WWR';
 	var $ready;
 	var HTMLSTRCOPY;
 	var APPCONFIG;

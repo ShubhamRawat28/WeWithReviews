@@ -231,7 +231,17 @@ function readTextareaContent() {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("Success:", data);
+      var ocrOutput = document.getElementById("ocr-output");
+
+      if (data.message == "OR") {
+        ocrOutput.textContent = "Genuine";
+        ocrOutput.classList.add("ocr-result-box-or");
+      } else {
+        ocrOutput.textContent = "Fake";
+        ocrOutput.classList.add("ocr-result-box-cr");
+      }
+
+      console.log(document.getElementById("ocr-output"));
     })
     .catch((error) => {
       console.error("Error:", error);

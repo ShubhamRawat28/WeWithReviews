@@ -8,7 +8,7 @@ def text_process(text):
 app = Flask(__name__)
 CORS(app)
 
-loaded_model = None  # Declare the variable to avoid NameError
+loaded_model = None 
 
 @app.before_first_request
 def load_model():
@@ -19,7 +19,7 @@ def load_model():
 def home():
     return jsonify({
         'success': True,
-        'message': "all okay",
+        'message': "We With Reviews",
     })
 
 @app.route('/predict', methods=['GET', 'POST'])

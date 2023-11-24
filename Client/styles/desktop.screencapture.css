@@ -1,46 +1,46 @@
-.ocrext-textoverlay-container.visible{
-    margin: 0 !important;
+.ocrext-textoverlay-container.visible {
+  margin: 0 !important;
 }
 
 /* #tabpanel-0-1 .ocrext-textoverlay-container{
     top: 92px !important;
 } */
 
-.ocrext-element.ocrext-status{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
+.ocrext-element.ocrext-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
 }
 
 .ocrext-progress {
-    color: #f45b03;
-    height: 16px;
-    opacity: 1 !important;
+  color: #b7bc547e;
+  height: 16px;
+  opacity: 1 !important;
 }
 
 .ocrext-success {
-    color: #4ac36c;
-    height: 16px;
-    opacity: 1 !important;
+  color: #58c34a;
+  height: 16px;
+  opacity: 1 !important;
 }
 
 .ocrext-error {
-    color: #d9534f;
-    height: 16px;
-    opacity: 1 !important;
+  color: #d9534f;
+  height: 16px;
+  opacity: 1 !important;
 }
 
-.ocrext-footer{
-    padding-top: 0 !important;
+.ocrext-footer {
+  padding-top: 0 !important;
 }
 
-.copyfish-tab-text-lng h5{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.copyfish-tab-text-lng h5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.copyfish-text-translate{
-    display: none;
+.copyfish-text-translate {
+  display: none;
 }
