@@ -154,21 +154,12 @@ let ScreenCap = {
 			document.body.removeChild(copyDivElm);
 			request.onComplete && request.onComplete();
 		}
-	
+		function checkReview(){
+			console.log(document.getElementById('OCR-result').value);	
+		}
 		browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-			//console.log(request.evt, 8789)
 			if (request.evt === 'desktopcaptureData') {
-				// enable only if resources are loaded and available
 				if (request.result.buffer) {
-					/* Old code witohut adjusting the devicePixcelRatio
-					$('#copyfish-tab-image').attr('src', `data:application/octet-stream;base64,${request.result.buffer}`)
-					browser.runtime.sendMessage({evt: "translateDesktopCapturedImage", data: `data:application/octet-stream;base64,${request.result.buffer}`})
-					const setImage = ScreenCap.readFileAsDataURL(request.result);
-					$('.placeholder')
-						.text(browser.i18n.getMessage('screenCaptureNotify'))
-						.addClass('notify');
-					*/
-					// do adjust of devicePixelRatio because nmost app already done the adjustment...
 					resizedataURL(`data:application/octet-stream;base64,${request.result.buffer}`).done(function (resultDataUri) {
 
 						request.result.buffer = resultDataUri;
@@ -203,3 +194,15 @@ $(function(){
 });
 
 
+// Define the function to read the textarea content
+function readTextareaContent() {
+	// Get the value from the textarea
+	var textareaValue = document.getElementById("OCR-result").value;
+  
+	// Log the value (you can do anything with the value here)
+	console.log("Textarea Value:", textareaValue);
+  }
+  
+  // Add an event listener to the button
+  document.getElementById("readTextareaBtn").addEventListener("click", readTextareaContent);
+  

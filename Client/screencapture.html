@@ -25,7 +25,7 @@
 
   <div class="tabs-container">
     <div data-tabs class="data-tab-block">
-      <div data-active>WeWithReviews</div>
+      <div data-active>Copyfish</div>
       <div>Overlay</div>
       <div class="ocr-text-capture-tab">Text</div>
       <div class="translate-text-tab ocrext-grid-translated">Translation (PRO+)</div>
@@ -73,7 +73,7 @@
     <div class="text-capture-tab translate-text-tab tab-screenshot translated-textarea-tab ">
       <div><h5 class="ocrext-element ocrext-label ocrext-message">OCR Result<span></span>:</h5></div>
       <div class="translated-textarea">
-      <textarea name="capture-text" class="ocrext-element ocrext-ocr-message ocrext-result" >N/A</textarea>
+      <textarea name="capture-text" id="OCR-result" class="ocrext-element ocrext-ocr-message ocrext-result" value="N/A"></textarea>
       </div>
     </div>
     <div class="translate-text-tab tab-screenshot translated-textarea-tab">
@@ -91,6 +91,8 @@
     <!-- <div class="ocrext-element mdl-cell mdl-cell--1-col">
       </div> -->
     <div class="ocrext-element mdl-cell mdl-cell--12-col ocrext-btn-container align-flex-center">
+      <button id="readTextareaBtn" class="ocrext-element ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+      title="Read Textarea">Read Textarea</button>
       <button
         class="ocrext-element ocrext-ocr-sendocr ocrext-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
         title="Redo OCR">Check Review</button>
