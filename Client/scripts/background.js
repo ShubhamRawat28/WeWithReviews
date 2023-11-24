@@ -12,13 +12,7 @@ window.browser = (function () {
 		window.chrome;
 })();
 $.ajaxSetup({ cache: false });
-/*
- * how does the enable/disable icon work?
- * Ans: website:document.ready -> 'ready' message to background -> enables icon
- *
- * how does clicking on the extension icon work?
- * Ans: browserAction:onclick -> 'enableselection' event to specific tab -> selection enabled in that tab
- */
+
 var activeOnTab = {};
 var isUpdated = false;
 const screenshotDelay = 3000;
